@@ -63,7 +63,7 @@ func listSchemaCmd() *cobra.Command {
 
 	cmd := &cobra.Command{
 		Use:   "list",
-		Short: "list all schemas",
+		Short: "List all schemas",
 		Args:  cobra.ExactArgs(1),
 		Example: heredoc.Doc(`
 			$ stencil schema list <namespace-id>
@@ -127,7 +127,7 @@ func createSchemaCmd() *cobra.Command {
 
 	cmd := &cobra.Command{
 		Use:   "create",
-		Short: "create all Schemas",
+		Short: "Create a schema",
 		Args:  cobra.ExactArgs(1),
 		Example: heredoc.Doc(`
 			$ stencil schema create <schema-id> --namespace=<namespace-id> --format=<schema-format> –-comp=<schema-compatibility> –-filePath=<schema-filePath> 
@@ -196,7 +196,7 @@ func updateSchemaCmd() *cobra.Command {
 
 	cmd := &cobra.Command{
 		Use:   "update",
-		Short: "update all Schemas",
+		Short: "Edit a schema",
 		Args:  cobra.ExactArgs(1),
 		Example: heredoc.Doc(`
 			$ stencil schema update <schema-id> --namespace=<namespace-id> –-comp=<schema-compatibility>
@@ -254,7 +254,7 @@ func getSchemaCmd() *cobra.Command {
 
 	cmd := &cobra.Command{
 		Use:   "get",
-		Short: "get all schemas",
+		Short: "View a schema",
 		Args:  cobra.ExactArgs(1),
 		Example: heredoc.Doc(`
 			$ stencil schema get <schema-id> --namespace=<namespace-id> --version <version> --metadata <metadata>
@@ -336,7 +336,7 @@ func deleteSchemaCmd() *cobra.Command {
 
 	cmd := &cobra.Command{
 		Use:   "delete",
-		Short: "delete all schemas",
+		Short: "Delete a schema",
 		Args:  cobra.ExactArgs(1),
 		Example: heredoc.Doc(`
 			$ stencil schema delete <schema-id> --namespace=<namespace-id>
@@ -403,7 +403,7 @@ func versionSchemaCmd() *cobra.Command {
 
 	cmd := &cobra.Command{
 		Use:   "version",
-		Short: "version(s) of all schemas",
+		Short: "Version(s) of a schema",
 		Args:  cobra.ExactArgs(1),
 		Example: heredoc.Doc(`
 			$ stencil schema version <schema-id> --namespace=<namespace-id>
